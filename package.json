@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "name": "scrapping-mangas",
   "version": "1.0.0-alpha",
   "description": "Web scrapper for popular websites of mangas",
