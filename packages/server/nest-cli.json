@@ -1,5 +1,27 @@
 {
   "language": "ts",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "src",
+  "projects": {
+    "modules": {
+      "root": "libs/modules",
+      "sourceRoot": "libs/modules/src"
+    },
+    "utils": {
+      "root": "libs/utils",
+      "sourceRoot": "libs/utils/src"
+    },
+    "core": {
+      "root": "libs/core",
+      "sourceRoot": "libs/core/src"
+    },
+    "database": {
+      "root": "libs/database",
+      "sourceRoot": "libs/database/src"
+    },
+    "settings": {
+      "root": "libs/settings",
+      "sourceRoot": "libs/settings/src"
+    }
+  }
 }

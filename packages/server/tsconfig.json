@@ -8,7 +8,47 @@
     "target": "es6",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@modules": [
+        "libs/modules/src"
+      ],
+      "@modules/modules/*": [
+        "libs/modules/src/*"
+      ],
+      "@utils": [
+        "libs/utils/src"
+      ],
+      "@utils/utils/*": [
+        "libs/utils/src/*"
+      ],
+      "@core": [
+        "libs/core/src"
+      ],
+      "@core/domain": [
+        "libs/core/src/domain"
+      ],
+      "@core/infrastructure": [
+        "libs/core/src/infrastructure"
+      ],
+      "@core/core/*": [
+        "libs/core/src/*"
+      ],
+      "@database/database": [
+        "libs/database/src"
+      ],
+      "@database/database/*": [
+        "libs/database/src/*"
+      ],
+      "@settings/settings": [
+        "libs/settings/src"
+      ],
+      "@settings/settings/*": [
+        "libs/settings/src/*"
+      ]
+    }
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
