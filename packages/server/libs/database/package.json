@@ -1,0 +1,13 @@
+{
+  "name": "database",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@nestjs/common": "^5.4.0",
+    "@nestjs/core": "^5.4.0"
+  },
+  "dependencies": {
+    "@nestjs/typeorm": "^7.0.0",
+    "pg": "^8.0.2",
+    "typeorm": "^0.2.24"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@nestjs/common": "^5.4.0",
+    "@nestjs/core": "^5.4.0"
+  },
+  "dependencies": {
+    "shallow-equal-object": "^1.1.1",
+    "uuid": "^7.0.3"
+  }
+}
