@@ -40,7 +40,7 @@
       "@database/database/*": [
         "libs/database/src/*"
       ],
-      "@settings/settings": [
+      "@settings": [
         "libs/settings/src"
       ],
       "@settings/settings/*": [
