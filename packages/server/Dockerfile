@@ -1,4 +1,4 @@
-FROM node:lts-slim
+FROM node:lts
 
 # See https://crbug.com/795759
 RUN apt-get update && apt-get -y upgrade && apt-get install \
@@ -21,8 +21,8 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init
 
-COPY . ./server
 WORKDIR /server
+COPY . .
 
 RUN yarn
 ARG CACHEBUST=1
@@ -32,7 +32,7 @@ ARG CACHEBUST=1
 RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
     && mkdir -p /home/pptruser/Downloads \
     && chown -R pptruser:pptruser /home/pptruser \
-    && chown -R pptruser:pptruser /app
+    && chown -R pptruser:pptruser /server
 
 USER pptruser
 
