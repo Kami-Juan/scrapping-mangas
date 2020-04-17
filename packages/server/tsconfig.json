@@ -10,12 +10,6 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@modules": [
-        "libs/modules/src"
-      ],
-      "@modules/modules/*": [
-        "libs/modules/src/*"
-      ],
       "@utils": [
         "libs/utils/src"
       ],
@@ -34,8 +28,11 @@
       "@core/core/*": [
         "libs/core/src/*"
       ],
-      "@database/database": [
+      "@database": [
         "libs/database/src"
+      ],
+      "@database/entities": [
+        "libs/database/src/entities"
       ],
       "@database/database/*": [
         "libs/database/src/*"

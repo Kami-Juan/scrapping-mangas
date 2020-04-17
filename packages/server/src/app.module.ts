@@ -3,9 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import ConfigModule from '@settings'
+import DatabaseModule from '@database';
+import { UserModule } from './modules';
 
 @Module({
-  imports: [ConfigModule],
+  imports: [ConfigModule, DatabaseModule, UserModule],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -24,9 +24,13 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/config": "^0.4.0",
     "@nestjs/core": "^5.4.0",
+    "@nestjs/typeorm": "^7.0.0",
+    "pg": "^8.0.2",
+    "puppeteer": "^3.0.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.2.2",
+    "typeorm": "^0.2.24",
     "typescript": "^3.0.1"
   },
   "devDependencies": {
@@ -35,6 +39,7 @@
     "@types/hapi__joi": "^16.0.12",
     "@types/jest": "^23.3.1",
     "@types/node": "^10.7.1",
+    "@types/puppeteer": "^2.0.1",
     "@types/supertest": "^2.0.5",
     "jest": "^23.5.0",
     "nodemon": "^1.18.3",
