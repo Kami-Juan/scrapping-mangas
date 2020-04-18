@@ -25,6 +25,9 @@
       "@core/infrastructure": [
         "libs/core/src/infrastructure"
       ],
+      "@core/logic/*": [
+        "libs/core/src/logic/*"
+      ],
       "@core/core/*": [
         "libs/core/src/*"
       ],
