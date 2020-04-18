@@ -5,10 +5,13 @@ services:
     container_name: postgres-pirate-manga
     image: postgres:9.6
     restart: always
+    command: postgres -c listen_addresses='*'
     networks:
       - pirate-manga-network
     ports:
       - '5432:5432'
+    volumes:
+      - postgresql_mangas:/var/lib/postgresql/data
     environment:
       - LC_ALL=C.UTF-8
       - POSTGRES_DB=${POSTGRES_DB}
@@ -83,6 +86,12 @@ volumes:
       o: bind
   node_modules:
     driver: local
+  postgresql_mangas:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${POSTGRES_DATA}
+      o: bind
 
 networks:
   pirate-manga-network:
