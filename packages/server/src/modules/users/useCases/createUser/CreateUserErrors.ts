@@ -4,7 +4,7 @@ import { UseCaseError } from "@core/logic/UseCaseError";
 export namespace CreateUserErrors {
   export class AccountAlreadyExists extends Result<UseCaseError> {
     constructor() {
-      super(false, {message: 'El usuario existe en el sistema'} as UseCaseError)
+      super(false, {message: 'The email user is already set'} as UseCaseError)
     }
   }
 }
