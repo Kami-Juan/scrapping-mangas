@@ -5,6 +5,11 @@ node_modules
 # local env files
 .env.local
 .env.*.local
+/packages/**/.env
+/packages/**/.env.*
+!/packages/**/.env.*.example
+
+/packages/server/docker/postgresql/**
 
 # Log files
 npm-debug.log*
