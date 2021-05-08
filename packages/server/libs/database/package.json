@@ -8,6 +8,6 @@
   "dependencies": {
     "@nestjs/typeorm": "^7.0.0",
     "pg": "^8.0.2",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   }
 }
